@@ -75,7 +75,16 @@ a:hover { color: var(--primary-dark); }
 }
 .hero-content { position: relative; max-width: 1160px; margin: 0 auto; text-align: center; }
 .eyebrow { margin: 0 0 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #dfe8ef; }
-h1 { margin: 0; font-size: clamp(2.35rem, 5vw, 4.35rem); line-height: 1.05; }
+.workshop-title {
+  margin: 16px auto 0;
+  color: #dfe8ef;
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-align: center;
+}
+h1 { margin: 0; font-size: clamp(1.9rem, 3.8vw, 3.2rem); line-height: 1.08; }
 .subtitle { margin: 24px auto 0; max-width: 860px; font-size: clamp(1.06rem, 1.8vw, 1.22rem); color: #edf2f5; }
 .hero-actions { margin: 34px 0 30px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(255,255,255,0.5); }
