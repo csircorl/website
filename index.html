@@ -40,12 +40,12 @@
 }
 .headshot{
   width: 100%;
-  max-width: 200px;
+  max-width: 160px;
   margin: 0 auto 18px auto;
   display:block;
 }
 .speaker-card .headshot{
-  max-width: 320px;
+  max-width: 160px;
 }
 .person h3{
   margin-top: 10px;
@@ -70,7 +70,7 @@
       Topics
      </a> -->
      <a href="#speakers">
-      Speakers
+      Speakers and Panelists
      </a>
      <a href="#cfp">
       Call for Papers
@@ -78,9 +78,9 @@
      <a href="#format">
       Format
      </a>
-     <a href="#schedule">
+     <!-- <a href="#schedule">
       Schedule
-     </a>
+     </a> -->
      <a href="#organizers">
       Organizers
      </a>
@@ -102,35 +102,15 @@
       <a class="button primary" href="#cfp">
        Call for Papers
       </a>
-      <a class="button secondary" href="#schedule">
-       View Schedule
+      <a class="button secondary" href="">
+       Livestream
       </a>
-     </div>
-     <div class="meta-grid">
-      <div>
-       <span>
-        Venue
-       </span>
-       <strong>
-        CoRL 2026
-       </strong>
-      </div>
-      <div>
-       <span>
-        Format
-       </span>
-       <strong>
-        Half-day, in person + livestream
-       </strong>
-      </div>
-      <div>
-       <span>
-        Audience
-       </span>
-       <strong>
-        Robot learning · RL · Continual learning
-       </strong>
-      </div>
+      <a class="button secondary" href="https://2026.corl.org/" rel="noopener noreferrer" target="_blank">
+       CoRL 2026
+      </a>
+      <!-- <a class="button secondary" href="#schedule">
+       View Schedule
+      </a> -->
      </div>
     </div>
    </section>
@@ -222,7 +202,7 @@
    <section class="section" id="speakers">
     <div class="section-heading">
      <h2>
-      Invited Speakers
+      Speakers and Panelists
      </h2>
     </div>
     <div class="people-grid">
@@ -235,7 +215,7 @@
        Abhishek Gupta
       </h3>
       <p>
-       University of Washington
+       UW & Amazon FAR
       </p>
      </div>
      <div class="person speaker-card">
@@ -274,6 +254,18 @@
        Dyna
       </p>
      </div>
+     <div class="person speaker-card">
+      <img alt="Pete Florence headshot" class="headshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" src="https://www.peteflorence.com/img/pete-crop-compressed.jpg"/>
+      <div class="avatar">
+       PF
+      </div>
+      <h3>
+       Pete Florence
+      </h3>
+      <p>
+       Generalist
+      </p>
+     </div>
     </div>
    </section>
    <section class="section accent-section" id="cfp">
@@ -283,6 +275,9 @@
      </h2>
      <p>
       We invite contributions that introduce theoretical frameworks, experimental findings, or applications that advance autonomous robot learning and self-improvement.
+     </p>
+     <p>
+      <strong>Submission deadline: TBD</strong>
      </p>
     </div>
     <div class="cards three-col">
@@ -355,134 +350,14 @@
      </div>
     </div>
    </section>
-   <section class="section narrow" id="schedule">
+   <!-- <section class="section narrow" id="schedule">
     <h2>
-     Preliminary Schedule
+     Schedule
     </h2>
-    <div aria-label="Workshop schedule" class="schedule-table" role="table">
-     <div class="schedule-row header" role="row">
-      <div>
-       Time
-      </div>
-      <div>
-       Session
-      </div>
-      <div>
-       Details
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       08:30 – 08:40
-      </div>
-      <div>
-       Opening
-      </div>
-      <div>
-       Opening remarks by organizers
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       08:40 – 09:05
-      </div>
-      <div>
-       Invited Talk 1
-      </div>
-      <div>
-       Jeff Clune
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       09:05 – 09:30
-      </div>
-      <div>
-       Invited Talk 2
-      </div>
-      <div>
-       Abhishek Gupta
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       09:30 – 10:05
-      </div>
-      <div>
-       Breakout Session 1
-      </div>
-      <div>
-       Problem formulation and benchmark design
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       10:05 – 10:25
-      </div>
-      <div>
-       Student Spotlight
-      </div>
-      <div>
-       Selected contributed papers
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       10:25 – 11:05
-      </div>
-      <div>
-       Break &amp; Poster
-      </div>
-      <div>
-       Poster discussions and networking
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       11:05 – 11:30
-      </div>
-      <div>
-       Invited Talk 3
-      </div>
-      <div>
-       Kay Ke
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       11:30 – 11:55
-      </div>
-      <div>
-       Invited Talk 4
-      </div>
-      <div>
-       Jason Ma
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       11:55 – 12:25
-      </div>
-      <div>
-       Breakout Session 2
-      </div>
-      <div>
-       Practical self-improvement pipelines
-      </div>
-     </div>
-     <div class="schedule-row">
-      <div>
-       12:25 – 12:30
-      </div>
-      <div>
-       Closing
-      </div>
-      <div>
-       Next steps and post-workshop artifact
-      </div>
-     </div>
-    </div>
-   </section>
+    <p>
+     TBD
+    </p>
+   </section> -->
    <section class="section" id="organizers">
     <div class="section-heading">
      <h2>
@@ -506,7 +381,7 @@
       </a>
      </div>
      <div class="person">
-      <img alt="Annie Xie headshot" class="headshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" src="images/annie-xie.jpg"/>
+      <img alt="Annie Xie headshot" class="headshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" src="images/annie-xie-square.jpg"/>
       <div class="avatar">
        AX
       </div>
