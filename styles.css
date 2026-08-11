@@ -134,6 +134,8 @@ li { margin-bottom: 8px; }
 .placeholder .avatar { background: #eef0ef; color: #79828b; }
 .person p { margin: 0 0 8px; }
 .person a { font-size: 0.88rem; overflow-wrap: anywhere; }
+.person .name-link { color: var(--ink); font-size: inherit; }
+.person .name-link:hover { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .advisory-grid {
   max-width: 656px;
   margin: 0 auto;
