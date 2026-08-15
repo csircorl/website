@@ -90,6 +90,7 @@ h1 { margin: 0; font-size: clamp(1.9rem, 3.8vw, 3.2rem); line-height: 1.08; }
 .button { display: inline-flex; align-items: center; justify-content: center; padding: 11px 20px; border-radius: 999px; font-weight: 800; border: 1px solid rgba(255,255,255,0.5); }
 .button.primary { background: #fff; color: var(--primary-dark); }
 .button.secondary { color: #fff; }
+.button.secondary:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
 .section { max-width: 1160px; margin: 0 auto; padding: 76px 24px; }
 .section.narrow { max-width: 860px; }
 .section.compact { padding-top: 30px; }
@@ -116,6 +117,42 @@ ul { padding-left: 19px; color: var(--muted); }
 li { margin-bottom: 8px; }
 .accent-section { max-width: none; background: var(--warm); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .accent-section .section-heading, .accent-section .cards { max-width: 1160px; margin-left: auto; margin-right: auto; }
+.section-kicker { margin: 0 0 8px; color: var(--primary); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.deadline-banner {
+  max-width: 1160px;
+  margin: 0 auto 22px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 24px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  box-shadow: 0 18px 38px rgba(36, 60, 90, 0.18);
+}
+.deadline-banner strong { display: block; font-size: clamp(1.12rem, 2vw, 1.38rem); line-height: 1.3; }
+.deadline-label { display: block; margin-bottom: 3px; color: #dfe8ef; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.cfp-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 0 0 auto; padding: 11px 20px; border-radius: 999px; background: #fff; color: var(--primary-dark); font-weight: 800; }
+.cfp-button:hover { background: var(--accent); color: var(--primary-dark); }
+.submission-panel {
+  max-width: 1160px;
+  margin: 0 auto 22px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+}
+.submission-panel > h3 { margin-bottom: 22px; font-size: 1.25rem; }
+.submission-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.submission-fact { padding: 0 24px; border-left: 1px solid var(--line); }
+.submission-fact:first-child { padding-left: 0; border-left: 0; }
+.submission-fact:last-child { padding-right: 0; }
+.submission-fact > span { display: block; margin-bottom: 5px; color: var(--primary); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.submission-fact strong { display: block; margin-bottom: 7px; color: var(--ink); font-size: 1.04rem; }
+.submission-fact p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
+.cfp-cards { max-width: 1160px; }
 .mini-card { padding: 26px; }
 
 .timeline { display: grid; gap: 18px; margin-top: 26px; }
@@ -157,7 +194,11 @@ li { margin-bottom: 8px; }
   .nav-links { display: none; width: 100%; flex-direction: column; padding-top: 14px; }
   .nav-links.open { display: flex; }
   .navbar { flex-wrap: wrap; }
-  .two-col, .three-col, .placeholder-grid, .people-grid, #speakers .people-grid, .advisory-grid { grid-template-columns: 1fr; }
+  .two-col, .three-col, .placeholder-grid, .people-grid, #speakers .people-grid, .advisory-grid, .submission-facts { grid-template-columns: 1fr; }
+  .deadline-banner { align-items: flex-start; flex-direction: column; }
+  .submission-fact, .submission-fact:first-child, .submission-fact:last-child { padding: 18px 0; border-left: 0; border-top: 1px solid var(--line); }
+  .submission-fact:first-child { padding-top: 0; border-top: 0; }
+  .submission-fact:last-child { padding-bottom: 0; }
   .schedule-row { grid-template-columns: 1fr; gap: 3px; }
   .hero { padding: 42px 20px 38px; }
 }
