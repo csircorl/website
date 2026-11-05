@@ -74,6 +74,7 @@ a:hover { color: var(--primary-dark); }
   mask-image: linear-gradient(to bottom, black, transparent 95%);
 }
 .hero-content { position: relative; max-width: 1160px; margin: 0 auto; text-align: center; }
+.workshop-location { margin: 12px auto 0; color: #edf2f5; font-size: 1rem; font-weight: 500; }
 .eyebrow { margin: 0 0 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #dfe8ef; }
 .workshop-title {
   margin: 10px auto 0;
@@ -135,6 +136,24 @@ li { margin-bottom: 8px; }
 .deadline-label { display: block; margin-bottom: 3px; color: #dfe8ef; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .cfp-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 0 0 auto; padding: 11px 20px; border-radius: 999px; background: #fff; color: var(--primary-dark); font-weight: 800; }
 .cfp-button:hover { background: var(--accent); color: var(--primary-dark); }
+#accepted-papers > .section-heading > p { margin-left: auto; margin-right: auto; }
+.spotlight-papers { max-width: 960px; margin: 44px auto 28px; scroll-margin-top: 100px; }
+.spotlight-heading { margin-bottom: 18px; }
+.spotlight-heading h3 { margin-bottom: 6px; font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+.spotlight-heading p { margin: 0; font-size: 0.9rem; }
+.spotlight-list { margin: 0; padding: 0; list-style: none; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+.spotlight-paper { display: grid; grid-template-columns: 132px minmax(0, 1fr); align-items: start; gap: 24px; margin: 0; padding: 22px 26px; border-bottom: 1px solid var(--line); }
+.spotlight-paper:last-child { border-bottom: 0; }
+.spotlight-time { display: block; padding: 5px 10px; border-radius: 8px; background: var(--accent); color: var(--primary-dark); font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
+.spotlight-paper p { align-self: center; margin: 0; max-width: none; color: var(--ink); font-size: 1rem; font-weight: 600; line-height: 1.55; }
+.spotlight-paper a { text-decoration: underline; text-decoration-color: rgba(56, 87, 122, 0.3); text-underline-offset: 4px; }
+.spotlight-paper a:hover { text-decoration-color: currentColor; }
+.spotlight-paper a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 2px; }
+.spotlight-schedule-link { text-decoration: underline; text-underline-offset: 3px; }
+.cfp-archive { max-width: 960px; margin: 0 auto; padding: 22px 24px; border: 1px solid var(--line); border-radius: 24px; }
+.cfp-archive > summary { cursor: pointer; color: var(--primary-dark); font-weight: 700; }
+.cfp-archive[open] > summary { margin-bottom: 28px; }
+.cfp-archive > summary:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; border-radius: 4px; }
 .submission-panel {
   max-width: 1160px;
   margin: 0 auto 22px;
@@ -241,6 +260,11 @@ li { margin-bottom: 8px; }
   .submission-fact:last-child { padding-bottom: 0; }
   .schedule-row { grid-template-columns: 1fr; gap: 3px; }
   .hero { padding: 42px 20px 38px; }
+}
+
+@media (max-width: 600px) {
+  .spotlight-paper { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 20px; }
+  .spotlight-time { justify-self: start; }
 }
 
 @media (min-width: 980px) {
